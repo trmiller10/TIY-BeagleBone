@@ -1,4 +1,4 @@
-# Cry "Havoc," And Let Loose the Dogs of Hardware
+# Cry "Havoc," And Let Slip the Dogs of Hardware
 
 ## Touch Sensor LED
 
@@ -12,16 +12,15 @@ The touch sensor has three pins - one for power, one to ground, and one to send 
 
 The analog input can go to any of the BeagleBone's 7 analog input pins - in our case, we used P9_40. 
 
-10k for power and ground?
-330k for input - this might have been overkill but it made our sensor more responsive
+Our power and ground connections each used a 10,000 Ω resistor between the touch sensor and the BeagleBone. Our analog input connection called for a 100,000 Ω resistor - we didn't have one so to play it safe we used a 330,000 Ω resistor. This (surprisingly to us!) made our analog input much more responsive.
 
 This diagram shows how we made all of our connections (the mystery part represents our soft potentiometer):
 
-![Fritzing Diagram](http://i.imgur.com/oTOHbwL.png)
+![Fritzing Diagram](http://i.imgur.com/OamZ10R.png)
 
 And here is a picture of what it looks like in reality:
 
-![LED Project](http://i.imgur.com/M8nBTYE.jpg)
+![LED Project](http://i.imgur.com/z7G4iMT.jpg)
 
 ## IntelliJ Setup
 
