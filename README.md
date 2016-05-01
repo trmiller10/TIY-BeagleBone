@@ -12,7 +12,7 @@ The touch sensor has three pins - one for power, one to ground, and one to send 
 
 The analog input can go to any of the BeagleBone Black's 7 analog input pins - in our case, we used P9_40. 
 
-The product description for our particular touch sensor (found here: https://www.adafruit.com/products/178) contains instructions on how to properly connect the power, ground, and input pins to the BeagleBone Black utilizing three resistors (two 10k Ω resistors and a 100k Ω resistor).  It also explicitly advises against connecting the pins to ground and power directly.  Our power and ground connections each used a 10k Ω resistor between the touch sensor and the BeagleBone Black. The product instruction for the analog input connection called for a 100k Ω resistor - we didn't have on so to play it safe we used a 330k Ω resistor. This (surprisingly to us!) made our analog input much more responsive.
+The product description for our particular touch sensor (found here: https://www.adafruit.com/products/178) contains instructions on how to properly connect the power, ground, and input pins to the BeagleBone Black utilizing three resistors (two 10k Ω resistors and a 100k Ω resistor).  It also explicitly advises against connecting the pins to ground and power directly.  Our power and ground connections each used a 10k Ω resistor between the touch sensor and the BeagleBone Black. The product instruction for the analog input connection called for a 100k Ω resistor; we didn't have one, so to play it safe we used a 330k Ω resistor. This (surprisingly to us!) made our analog input much more responsive.
 
 This diagram shows how we made all of our connections (the mystery part represents our soft potentiometer):
 
